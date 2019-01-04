@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92186899-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92186899-2');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nosotros</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/handytec-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascripts/modernizr-custom.js"></script>
+    <link id="favicon" rel="icon" href="../images/logos/handytec_icon_bk.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--------------------------- NavBar + Background Image + Texto Centrado -------------------------------------->
+    <section style="min-height: 100vh;">
+        <div class="nosotros-header-img" style="min-height: 100vh;">
+            <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="padding-bottom: 15px;">
+                <a href="/es" class="navbar-left">
+                    <img src="../images/logos/handytec_logo_index.svg" height="39px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/es" onclick="location.href = '/es';">Inicio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/es/nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/es/productos" id="navbarDropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Productos</a>
+                            <div class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" style="padding: 8px; " href="/es/productos#helio">helio.geo</a>
+                                <a class="dropdown-item" style="padding: 8px; " href="/es/productos#krypton">krypton.data</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/es/servicios" id="navbarDropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Servicios</a>
+                            <div class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#estrategiaDot8">Estrategia
+                                    DOT8</a>
+                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#BINewGen">BI Nueva
+                                    Generación</a>
+                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#analiticaAvanzada">Analítica
+                                    Avanzada</a>
+                                <a class="dropdown-item" style="padding: 8px; " href="/es/academy">handytec Academy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/es/contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="es-languaje-dropdown" class="nav-link dropdown-toggle" href="/es/nosotros" id="navbarDropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/flags/ES.png" alt="ES" /> ES</a>
+                            <div id="en-languaje-dropdown" class="dropdown-menu" style="min-width: 75px;"
+                                aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" style="padding: 8px; " href="#" onclick="changeLink('/en/about')">
+                                    <img src="../images/flags/US.png" alt="EN" /> EN</a>
+                            </div>
+                        </li>
+                        <li class="search-form">
+                            <form role="search" method="get" class="search" action="/es/buscar">
+                                <input id="input-search" type="text" name="q" value="" class="search-input search_field_main"
+                                    maxlength="50" placeholder="Buscar..">
+                                <input id="search-btn" type="submit" class="search-trigger search_submit_main" style="width: 30px; height: 30px;">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nosotros-center-main-text">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2 d-none d-lg-block">
+                                </div>
+                                <div class="col-md">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <h1 class="card-title">
+                                                <span class="bold">Nosotros</span>
+                                            </h1>
+                                            <p class="card-text" style="padding-top:30px; font-size: 1.3em;">Desde
+                                                nuestro inicio de operaciones en Ecuador, nos hemos caracterizado por
+                                                entender
+                                                a profundidad las problemáticas de nuestros clientes y aliados más
+                                                cercanos,
+                                                para proponerles las mejores y más disruptivas soluciones de Analítica
+                                                de
+                                                Datos Masivos a nivel mundial. Con el transcurso del tiempo, hemos
+                                                evolucionado
+                                                como compañía y consolidamos congruencia con nuestra misión: queremos
+                                                que
+                                                las personas y las organizaciones saquen el máximo provecho de sus
+                                                activos
+                                                de información.</p>
+                                            <p class="card-text" style="font-size: 1.3em;">
+                                                Actualmente, handytec se ha convertido en un verdadero centro de valor
+                                                y conocimiento. Este éxito, es consistente con el
+                                                posicionamiento de nuestros spin-offs (productos tecnológicos), quienes
+                                                también
+                                                han sido reconocidos por su potencial y fueron ganadores nacionales de
+                                                eventos
+                                                de innovación como Open Future y EXPOTIC. A finales de 2018, marcaremos
+                                                dos
+                                                hitos adicionales: la creación del mejor programa de capacitación para
+                                                equipos
+                                                de Ciencia de Datos
+                                                <span class="bold">handytec Academy</span>, y la construcción del mejor
+                                                agregador de datos bajo
+                                                demanda del país
+                                                <span class="bold">krypton.data</span>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- Sección Líderes -------------------------------------->
+    <section>
+        <div class="container-fluid" style="background-color:#FFFFFF; padding-top: 50px;padding-bottom: 30px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title-dark">Liderando la innovación en Ciencia de Datos</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="background-color:#FFFFFF;padding-bottom: 50px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="img-responsive-lideres" src="../images/assets/diego_montufar_img.png"
+                                        height="215" width="215" alt="Diego Montufar CEO">
+                                    <div class="card-body">
+                                        <h4 class="card-title-dark" style="text-align: center">DIEGO MONTÚFAR</h4>
+                                        <p class="card-text-dark" style="text-align: center; margin-bottom: 0px;">DIRECTOR
+                                            EJECUTIVO</p>
+                                        <div class="row-img" style="padding: 0px;">
+                                            <img class="zoom" href="#" onclick="openLink('https://ec.linkedin.com/in/diegomontufar')"
+                                                src="../images/assets/linkedin_icon_lideres.png" width="20" height="20"
+                                                alt="LinkedIn" style="cursor: pointer;">
+                                            <img class="zoom" href="#" onclick="openLink('https://twitter.com/diemontufar')"
+                                                src="../images/assets/twitter_icon_lideres.png" width="20" height="20"
+                                                alt="Twitter" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-responsive-lideres" src="../images/assets/jorge_jaramillo_img.png"
+                                        height="215" width="215" alt="Jorge Jaramillo GERENTE GENERAL">
+                                    <div class="card-body">
+                                        <h4 class="card-title-dark" style="text-align: center">JORGE JARAMILLO</h4>
+                                        <p class="card-text-dark" style="text-align: center; margin-bottom: 0px;">GERENTE
+                                            GENERAL</p>
+                                        <div class="row-img" style="padding: 0px;">
+                                            <img class="zoom" href="#" onclick="openLink('https://www.linkedin.com/in/jorgeluisjaramilloe')"
+                                                src="../images/assets/linkedin_icon_lideres.png" width="20" height="20"
+                                                alt="LinkedIn" style="cursor: pointer;">
+                                            <img class="zoom" href="#" onclick="openLink('https://twitter.com/JorgeLJE')"
+                                                src="../images/assets/twitter_icon_lideres.png" width="20" height="20"
+                                                alt="Twitter" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="img-responsive-lideres" src="../images/assets/ricardo_diaz_img.png"
+                                        height="215" width="215" alt="Ricardo Díaz Gerente BI">
+                                    <div class="card-body">
+                                        <h4 class="card-title-dark" style="text-align: center">RICARDO DÍAZ</h4>
+                                        <p class="card-text-dark" style="text-align: center; margin-bottom: 0px;">GERENTE
+                                            INTELIGENCIA DE NEGOCIOS</p>
+                                        <div class="row-img" style="padding: 0px;">
+                                            <img class="zoom" href="#" onclick="openLink('https://www.linkedin.com/in/ricardo-diaz-550b654a')"
+                                                src="../images/assets/linkedin_icon_lideres.png" width="20" height="20"
+                                                alt="LinkedIn" style="cursor: pointer;">
+                                            <img class="zoom" href="#" onclick="openLink('https://twitter.com/ricardodiazrazo')"
+                                                src="../images/assets/twitter_icon_lideres.png" width="20" height="20"
+                                                alt="Twitter" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------- Sección Título Principal + Texto + Video -------------------------------------->
+    <section class="responsive-2-col">
+        <div class="container-fluid" style="background-color:#D8D8D8; padding-top: 55px; padding-bottom: 50px;">
+            <div class="row">
+                <div class="col-md-1 d-none d-lg-block">
+                </div>
+                <div class="col-md">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title-dark" style="font-size: 2em;">¿Por qué hemos revitalizado nuestra
+                                marca?</h4>
+                            <p class="card-text-dark" style="padding-top: 25px;">Hemos decidido que handytec siempre
+                                será handytec, pero en consistencia a nuestra transformación
+                                continua también pensamos que ya era hora de renovar algunos detalles. Si ya eres uno
+                                de
+                                nuestros clientes, queremos agradecer tu confianza y anticiparte que serás testigo de
+                                varios
+                                cambios positivos alrededor de las palabras
+                                <span class="bold"> VISIÓN</span>,
+                                <span class="bold"> CONOCIMIENTO </span> e
+                                <span class="bold"> IMPACTO</span>. Si aún no eres uno de nuestros clientes, solo
+                                relájate y disfruta de la experiencia
+                                de trabajar con nosotros muy pronto.
+                            </p>
+                        </div>
+                        <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-md-1 d-none d-lg-block">
+                            </div>
+                            <div class="col-md" style="display: block; text-align: center;">
+                                <div class="container-video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Io3_eFbDgak?rel=0"
+                                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-1 d-none d-lg-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 d-none d-lg-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------- Footer ------------------------------------------------>
+    <section>
+        <div class="footer-img" style="padding-top: 20px;">
+            <div class="container-fluid">
+                <footer class="page-footer">
+                    <div class="row" style="padding-top:25px;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">PRODUCTOS</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es/helio" style="color:#C2C2C2">helio.geo</a>
+                                </li>
+                                <li>
+                                    <a style="color:#C2C2C2">krypton.data</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">SERVICIOS</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es/servicios#estrategiaDot8" style="color:#C2C2C2">Estrategia DOT8</a>
+                                </li>
+                                <li>
+                                    <a href="/es/servicios#BINewGen" style="color:#C2C2C2">BI Nueva Generación</a>
+                                </li>
+                                <li>
+                                    <a href="/es/servicios#analiticaAvanzada" style="color:#C2C2C2">Analítica Avanzada</a>
+                                </li>
+                                <li>
+                                    <a href="/es/academy" style="color:#C2C2C2">handytec Academy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">TECNOLOGÍA</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es/aliados" style="color:#C2C2C2">Aliados</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">CONTÁCTANOS</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es/contacto" style="color:#C2C2C2">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="/es/contacto" style="color:#C2C2C2">Carreras</a>
+                                </li>
+                                <li>
+                                    <a href="#!" style="color:#C2C2C2">Casos de Éxito</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">SITIO</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es" style="color:#C2C2C2">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="/es/nosotros" style="color:#C2C2C2">Nosotros</a>
+                                </li>
+                                <li>
+                                    <a href="/es/productos" style="color:#C2C2C2">Productos</a>
+                                </li>
+                                <li>
+                                    <a href="/es/servicios" style="color:#C2C2C2">Servicios</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <!-- Footer de 3 columnas-->
+                    <div class="footer-direccion">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3 m-auto">
+                                <div>
+                                    <a href="/es">
+                                        <img src="../images/logos/handytec_logo_index.svg" height="39px">
+                                    </a>
+                                </div>
+                                <br>
+                                <a style="color:#C2C2C2">© 2018 Handytecmobi S.A. Todos los derechos reservados.</a>
+                            </div>
+
+                            <div class="col-md-3 m-auto">
+                                <br>
+                                <a style="color:#C2C2C2">Av. República de El Salvador N35-82 y Portugal</a>
+                                <a style="color:#C2C2C2"> |Quito, Ecuador|</a>
+                                <br>
+                                <a style="color:#C2C2C2">+593 (02) 224 3559 | contact@handytec.mobi</a>
+                            </div>
+
+                            <div class="col-md-3 m-auto">
+                                <br>
+                                <div class="row-img">
+                                    <img class="zoom" href="#" onclick="openLink('https://www.linkedin.com/company/handytec')"
+                                        src="../images/logos/linkedin_logo.png" width="30" height="30" alt="LinkedIn"
+                                        style="cursor: pointer;" onmouseover="hoverLinked(this,'linkedin');" onmouseout="unhoverLinked(this,'linkedin');">
+                                    <img class="zoom" href="#" onclick="openLink('https://twitter.com/handytec')" src="../images/logos/twitter_logo.png"
+                                        width="30" height="30" alt="Twitter" style="cursor: pointer;" onmouseover="hoverLinked(this,'twitter');"
+                                        onmouseout="unhoverLinked(this,'twitter');">
+                                    <img class="zoom" href="#" onclick="openLink('https://www.facebook.com/handytec')"
+                                        src="../images/logos/facebook_logo.png" width="30" height="30" alt="Facebook"
+                                        style="cursor: pointer;" onmouseover="hoverLinked(this,'facebook');" onmouseout="unhoverLinked(this,'facebook');">
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/navcolor.js"></script>
+    <script>
+        function openLink(link) {
+            window.open(link);
+        }
+        function changeLink(link) {
+            window.location.replace(link);
+        }
+        var searchField = document.getElementById('input-search');
+        var searchBtn = document.getElementById('search-btn');
+        searchBtn.addEventListener('mouseover', function () {
+            searchField.focus();
+        });
+    </script>
+    <script>
+        if (!Modernizr.touchevents) {
+            function hoverLinked(element, brand) {
+                var src = `../images/logos/${brand}_active_logo.png`
+                element.setAttribute('src', src);
+            };
+            function unhoverLinked(element, brand) {
+                var src = `../images/logos/${brand}_logo.png`
+                element.setAttribute('src', src);
+            };
+        } else {
+            function hoverLinked(element, brand) {
+                var src = `../images/logos/${brand}_logo.png`
+                element.setAttribute('src', src);
+            };
+            function unhoverLinked(element, brand) {
+                var src = `../images/logos/${brand}_logo.png`
+                element.setAttribute('src', src);
+            };
+        }
+
+    </script>
+</body>
+
+</html>
