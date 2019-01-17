@@ -1,53 +1,51 @@
-body{
-    margin: 20px 0;
-}
-
 .test-img{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: auto;
+    text-align: center;
     width: 100px;
     height: 100px;
     border-style: solid;
     border-width: thin;
     border-color: black;
     border-radius: 100px;
-    box-shadow: #999999;
 }
 
 
 .testimonial{
     text-align: center;
-    padding-bottom: 40px;
+    padding:0 5px 5px 5px;
+    border:1px solid #999999;
+    background: white ;
+    margin-left: 10px;
+    margin-right: 10px;
     font-weight: bold;
-    border-radius: 15px;
-    font-family: "Century Gothic", "Muli", sans-serif;
+    border-radius: 1px;
 }
 
 .test-heading{
-    padding-top: 20px;
-    color:#6b478e;
-    font-family: "Century Gothic", "Muli", sans-serif;
+    margin-top: 25px;
+    color:#6b478e;;
     font-size: 22px;
 }
 
 .test-text{
-    padding: 15px;
-    color: #999999;
-
-    font-family: "Century Gothic", "Muli", sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom:15px; 
+    color: #575756;
+    font-weight: normal;
 }
 .test-body-block{
-    border:2px solid #999999;
-    border-radius: 15px;
-    height: 250px;
-    box-shadow: 5px 5px 5px grey;
-    font-family: "Century Gothic", "Muli", sans-serif;
-    background: white ;
+    margin: 15px;
+    height: auto;
 }
 .test-comp{
     color:#6b478e;
-    font-family: "Century Gothic", "Muli", sans-serif;
     font-size: 1.0em;
     padding-bottom: 20px;
     font-weight: bold;
+}
+
+.slick-slide img {
+     display: inline !important; 
 }

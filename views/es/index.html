@@ -14,184 +14,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <meta property="fb:app_id" content="966242223397117">
-    <meta name="description" content="Somos una Compañía especializada en ofrecer soluciones de Analítica a la medida. Trabajamos con tecnologías de vanguardia y ayudamos a las empresas a adoptar y explotar el poder transformacional de la Ciencia de Datos, para alcanzar sus más ambiciosos objetivos estratégicos en sus negocios.">
-    <meta name="keywords" content="Analítica de Datos, Cognitive computing, Machine Learning, Inteligencia Artificial, Big Data, handytec, HandytecMobi S.A., Big Data Ecuador" />
-    <meta name="author" content="Handytecmobi S.A.">
-
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image" content="https://www.handytec.mobi/images/logos/logo-handytec-1200-1200.png">
-
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="620">
-    <meta property="og:image" content="https://www.handytec.mobi/images/logos/logo-handytec-1200-620.png">
-
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    <meta property="og:image" content="https://www.handytec.mobi/images/logos/logo-handytec-200-200.png">
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@handytec">
-    <meta name="twitter:title" content="handytec - Data Analytics">
-    <meta name="twitter:description" content="Somos una Compañía especializada en ofrecer soluciones de Analítica a la medida. Trabajamos con tecnologías de vanguardia y ayudamos a las empresas a adoptar y explotar el poder transformacional de la Ciencia de Datos, para alcanzar sus más ambiciosos objetivos estratégicos en sus negocios.">
-    <meta name="twitter:creator" content="@handytec">
-    <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image:src" content="https://www.handytec.mobi/images/logos/logo-handytec-1200-620.png">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="handytec" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.handytec.mobi" />
-    <meta property="og:image" content="https://www.handytec.mobi/images/logos/logo-handytec-1200-620.png" />
-    <meta property="og:description" content="Somos una Compañía especializada en ofrecer soluciones de Analítica a la medida. Trabajamos con tecnologías de vanguardia y ayudamos a las empresas a adoptar y explotar el poder transformacional de la Ciencia de Datos, para alcanzar sus más ambiciosos objetivos estratégicos en sus negocios." />
-    <meta property="og:site_name" content="Handytecmobi S.A." />
-
-    <title>handytec</title>
+    <title>e-Academy</title>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="../stylesheets/handytec-style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../stylesheets/academy-style.css" rel="stylesheet">
+    <link href="../stylesheets/testimonials.css" rel="stylesheet">
+    <link href="../stylesheets/products.css" rel="stylesheet">
     <script src="../javascripts/modernizr-custom.js"></script>
     <link id="favicon" rel="icon" href="../images/logos/handytec_icon_bk.ico" type="image/x-icon">
     <link href="../stylesheets/slick.css" rel="stylesheet">
     <link href="../stylesheets/slick-theme.css" rel="stylesheet">
-
 </head>
 
 <body>
-    <!--Script para manejar el chat dentro de la pantalla-->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '333192284120568',
-                autoLogAppEvents: true,
-                xfbml: true,
-                version: 'v3.1'
-            });
-        };
+    <!--------------------------- NavBar-------------------------------------->
+    <section>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="padding-bottom: 10px;">
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/es_LA/sdk.js";
-            //js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+            <a href="/" class="navbar-left">
+                <img src="../images/logos/academy/e-academy_logo.svg" height="65px">
+            </a>
+            <!-- boton tipo hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!--------------------------- NavBar + Background Image + Texto Centrado -------------------------------------->
-    <section style="min-height: 100vh;">
-        <div class="header-img" style="min-height: 100vh;">
-            <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="padding-bottom: 15px;">
-                <a href="/es" class="navbar-left">
-                    <img src="../images/logos/handytec_logo_index.svg" height="39px">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active" style="padding-right: 60px;">
+                        <a class="navbar-brand" href="/#Cursos">
+                            <img src="../images/logos/academy/cursos_icon.svg" width="65" height="65" alt="Cursos"
+                                style="text-decoration-color: black" />
+                                <span>Cursos</span>
+                        </a>
+                    </li>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/es" onclick="location.href = '/es';">Inicio
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/es/nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/es/productos" id="navbarDropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Productos</a>
-                            <div class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/productos#helio">helio.geo</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/productos#krypton">krypton.data</a>
+                    <li class="nav-item active">
+                        <a class="navbar-brand" href="/es/contacto-academy">
+                            <img src="../images/logos/academy/plan_corporativo_icon.svg" width="65" height="65" alt="Plan" style="text-decoration-color: black" />
+                            <span>Plan Corporativo</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <button href="/es/contacto-academy" onclick="location.href = '/es/contacto-academy';" class="btn login-academy"
+                            style="font-weight: bold">Iniciar Sesión</button>
+                        <!-- añadir link para el inicio de sesion-->
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+    <!--------------------------- Carrousel Principa-------------------------------------->
+    <section>
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row" style="background-image: url(../images/logos/academy/Slides-01.png); background-size: cover; width: auto;height: 95vh;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5 m-auto">
+                            <div class="card text-center">
+                                <div class="card-body" style="text-align: left;">
+                                    <h3 class="card-title-dark" style="color:#6b478e">Conviértete en un Científico de Datos</h3>
+                                    <p class="card-text" style="padding:30px; text-align: left;font-size: 1.5em;color: #999999;">Programa
+                                        Corporativo para entrenar equipos de Ciencia de Datos y Big Data.</p>
+                                    <button href="es/contacto-academy" onclick="location.href = '/es/contacto-academy';" class="btn info-academy"
+                                        style="font-weight: bold;width: 220px;">Inscribirme Ahora</button>
+                                </div>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/es/servicios" id="navbarDropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Servicios</a>
-                            <div class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#estrategiaDot8">Estrategia
-                                    DOT8</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#BINewGen">BI Nueva
-                                    Generación</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#analiticaAvanzada">Analítica
-                                    Avanzada</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/academy">handytec Academy</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/es/contacto">Contacto</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a id="es-languaje-dropdown" class="nav-link dropdown-toggle" href="/es" id="navbarDropdown"
-                                role="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="../images/flags/ES.png" alt="ES" /> ES</a>
-                            <div id="en-languaje-dropdown" class="dropdown-menu" style="min-width: 75px;"
-                                aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="padding: 8px; " href="#" onclick="changeLink('/en')">
-                                    <img src="../images/flags/US.png" alt="EN" /> EN</a>
-                            </div>
-                        </li>
-                        <li class="search-form">
-                            <form role="search" method="get" class="search" action="/es/buscar">
-                                <input id="input-search" type="text" name="q" value="" class="search-input search_field_main"
-                                    maxlength="50" placeholder="Buscar..">
-                                <input id="search-btn" type="submit" class="search-trigger search_submit_main" style="width: 30px; height: 30px;">
-                            </form>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
                 </div>
-            </nav>
-            <div class="center-main-text">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-2 d-none d-lg-block">
+                <div class="carousel-item">
+                    <div class="row" style="background-image: url(../images/logos/academy/Slides-02.png); background-size: cover; width: auto;height: 95vh;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5 m-auto">
+                            <div class="card text-center">
+                                <div class="card-body" style="text-align: left;">
+                                    <h3 class="card-title-dark" style="color:#6b478e">Refuerza tus habilidades</h3>
+                                    <p class="card-text" style="padding:30px; text-align: left;font-size: 1.5em;color: #999999;">Nuestros
+                                        cursos avanzados te premitirán especializarte en varias áreas de aplicación del
+                                        Data Science.</p>
+                                    <button href="#Cursos" onclick="location.href = '#Cursos';" class="btn info-academy"
+                                        style="font-weight: bold;width: 220px;">Saber más</button>
                                 </div>
-                                <div class="col-md-8 m-auto">
-                                    <div class="card text-center">
-                                        <div class="card-body">
-                                            <h1 class="card-title">The future behind
-                                                <span class="bold"> your data</span>
-                                            </h1>
-                                            <p class="card-text" style="padding:30px; font-size: 1.4em;">Transformamos
-                                                la manera en que las organizaciones usan sus datos para tomar
-                                                decisiones
-                                                estratégicas.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="row" style="text-align: center;">
-                                            <div class="col-md-2 d-none d-lg-block">
-                                            </div>
-                                            <div class="col-md-4 m-auto">
-                                                <button href="/es/nosotros" onclick="location.href = '/es/nosotros';"
-                                                    class="btn default" style="font-weight: bold; margin-bottom:13px;">Conoce
-                                                    más</button>
-                                            </div>
-                                            <div class="col-md-4 m-auto">
-                                                <button href="/es/contacto" onclick="location.href = '/es/contacto';"
-                                                    class="btn default" style="font-weight: bold; margin-bottom:13px;">Contáctanos</button>
-                                            </div>
-                                            <div class="col-md-2 d-none d-lg-block">
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row" style="background-image: url(../images/logos/academy/Slides-03.png); background-size: cover; width: auto;height: 95vh;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6 m-auto">
+                            <div class="card text-center">
+                                <div class="card-body" style="text-align: left;">
+                                    <h3 class="card-title-dark" style="color:white">Aprende a tu propio ritmo</h3>
+                                    <p class="card-text" style="padding:30px; text-align: left;font-size: 1.5em;color: white;">Accede
+                                        a tus cursos desde cualquier lugar y a cualquier momento.</p>
+                                    <button href="#Cursos" onclick="location.href = '#Cursos';" class="btn info-academy-inverted"
+                                        style="font-weight: bold;width: 220px;border: none">Saber más</button>
                                 </div>
-                                <div class="col-md-2 d-none d-lg-block">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row" style="background-image: url(../images/logos/academy/Slides-04.png); background-size: cover; width: auto;height: 95vh;">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 m-auto">
+                            <div class="card text-center">
+                                <div class="card-body" style="text-align: left;">
+                                    <h3 class="card-title-dark" style="color:#6b478e">Plan Corporativo</h3>
+                                    <p class="card-text" style="padding:30px; text-align: left;font-size: 1.5em;color: #999999;">Entérate
+                                        de nuestros programas especiales para empresas.</p>
+                                    <button href="/es/contacto-academy" onclick="location.href = '/es/contacto-academy';" class="btn info-academy"
+                                        style="font-weight: bold;width: 220px;border: none">Contáctanos</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+
+    <!--------------------------- Div Morada con Texto-------------------------------------->
+    <section>
+        <div class="container-fluid" style="background-color:#6B478E; padding-top: 8px;padding-bottom: 8px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row" style="text-align: center;">
+                        <div class="col-md-4">
+                            <div class="card-subtitle">
+                                <div class="card-body">
+                                    <img src="../images/logos/academy/ciencia_datos_icon.svg" height="80px">
+                                    <div>
+                                        <span style="color: white; font-size: 1.2em">Ciencia de Datos Online</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card-subtitle">
+                                <div class="card-body">
+                                    <img src="../images/logos/academy/python_r_icon.svg" height="80px">
+                                    <div>
+                                        <span style="color: white; font-size: 1.2em">Programa en Python y R</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card-subtitle">
+                                <div class="card-body">
+                                    <img src="../images/logos/academy/carrera_ciencia_icon.svg" height="80px">
+                                    <div>
+                                        <span style="color: white; font-size: 1.2em">Tu carrera en Ciencia de Datos</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,116 +211,285 @@
         </div>
     </section>
 
-    <!--------------------------- Barra con Brands Dinámicos -------------------------------------->
-    <div class="container-fluid" style="background-color:#1D1D1B;">
-        <div class="row">
-            <div class="col-md-12" style="padding-left: 35px;padding-right: 35px;">
-                <div class="brands">
-                    <div><img class="img-responsive-brands" src="../images/logos/farmaenlace_logo.svg" height="75px"
-                            alt="Farmaenlace"></div>
-                    <div><img class="img-responsive-brands" src="../images/logos/asur_logo.svg" height="75px" alt="Aseguradora del Sur"></div>
-                    <div><img class="img-responsive-brands" src="../images/logos/inmedical_logo.svg" height="75px" alt="Inmedical"></div>
-                    <div><img class="img-responsive-brands" src="../images/logos/ordenio_logo.svg" height="75px" alt="El Ordeño"></div>
-                    <div> <img class="img-responsive-brands" src="../images/logos/seguros_equinoccial_logo.svg" height="75px"
-                            alt="Seguros Equinoccial"></div>
-                    <div><img class="img-responsive-brands" src="../images/logos/cooprogreso_logo.svg" height="75px"
-                            alt="Cooprogreso"></div>
-                    <div><img class="img-responsive-brands" src="../images/logos/pinto_logo.svg" height="75px" alt="Pinto"></div>
+
+    <!--------------------------- Secccion  Cursos -------------------------------------->
+    <section id="Cursos">
+        <div class="container-fluid" style="background-color:white; padding-top: 30px;padding-bottom: 20px">
+
+            <div class="row" style="display: block">
+                <div class="col-md-5">
+                    <p style="color:#6b478e; text-align: left; padding-top: 10px ;padding-bottom: 30px; padding-left: 40px; font-size: 2.1em">Nuestros
+                        <span class="bold"> Cursos</span>
+                    </p>
                 </div>
+            </div>
+
+            <div class="row align-items-start " style="display:flex">
+                <div class="col-lg-5">
+                    <div class="card-subtitle">
+                        <p style="font-family: Century Gothic, Muli, sans-serif; font-weight: bold; font-size: 1.4em; padding-left: 40px;color: #5D5D5D">
+                            La mejor selección de cursos para que conviertas en un científico de datos.</p>
+                        <p style=" padding-left: 40px;color: #999999; font-size: 1.1em;">
+                            Contamos con una excelente propuesta de cursos para que te conviertas en un especialista en
+                            Analítica y Big Data</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 m-auto ">
+                    <div class="content">
+                        <!-- content here -->
+                        <div class="product-grid product-grid--flexbox" style="height: 100% ;width: 100%">
+
+                            <div class="product-grid__wrapper">
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <img src="../images/logos/academy/ciencia_datos_min.jpg" alt="Img" class="product-grid__img" />
+                                        </div>
+                                        <div class="product-grid__title">Herramientas para ciencia de datos</div>
+                                        <div style="margin:10px;">
+                                            <span class="product-grid__level">Introductorio</span>
+                                        </div>
+                                        <span class="product-grid__btn product-grid__view">Ver
+                                            más</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <img src="../images/logos/academy/data_viz_min.jpg" alt="Img" class="product-grid__img" />
+                                        </div>
+                                        <div class="product-grid__title">Introducción a Data Viz con Tableau</div>
+                                        <div style="margin:10px;">
+                                            <span class="product-grid__level">Introductorio</span>
+                                        </div>
+                                        <span class="product-grid__btn product-grid__view">Ver
+                                            más</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <img src="../images/logos/academy/integracion_datos_min.jpg" alt="Img"
+                                                class="product-grid__img" />
+                                        </div>
+                                        <div class="product-grid__title">Integración de Datos con Pentaho</div>
+                                        <div style="margin:10px;">
+                                            <span class="product-grid__level">Avanzado</span>
+                                        </div>
+                                        <span class="product-grid__btn product-grid__view">Ver
+                                            más</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <img src="../images/logos/academy/visualizacion_masiva_min.jpg" alt="Img"
+                                                class="product-grid__img" />
+                                        </div>
+                                        <div class="product-grid__title">Visualización de datos masivos.</div>
+                                        <div style="margin:10px;">
+                                            <span class="product-grid__level">Principiante</span>
+                                        </div>
+                                        <span class="product-grid__btn product-grid__view">Ver
+                                            más</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <img src="../images/logos/academy/deep_learning_min_new.jpg" alt="Img"
+                                                class="product-grid__img" />
+                                        </div>
+                                        <div class="product-grid__title">Deep Learning para reconocimiento de imágenes</div>
+                                        <div style="margin:10px;">
+                                            <span class="product-grid__level">Principiante</span>
+                                        </div>
+                                        <span class="product-grid__btn product-grid__view">Ver
+                                            más</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------- Div Gris con Texto-------------------------------------->
+    <section>
+        <div class="container-fluid" style="background-color:#999999; padding-top: 40px;padding-bottom: 40px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-md m-auto">
+                            <div class="card-academy">
+                                <div class="card-body">
+                                    <div style="display:block; text-align: center">
+                                        <img src="../images/logos/academy/estudia_icon.svg" height="65px">
+                                    </div>
+                                    <h5 class="card-title-academy">Estudia cuando quieras</h5>
+                                    <p>
+                                        Accedes a los cursos de acuerdo a tu calendario con los horarios más flexibles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md m-auto">
+                            <div class="card-academy">
+                                <div class="card-body">
+                                    <div style="display:block; text-align: center">
+                                        <img src="../images/logos/academy/formacion_icon.svg" height="65px">
+                                    </div>
+                                    <h5 class="card-title-academy">Encuentra la mejor formación</h5>
+                                    <p>
+                                        Selecciona el curso que mejor te convenga de acuerdo a tu perfil.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md m-auto">
+                            <div class="card-academy">
+                                <div class="card-body">
+                                    <div style="display:block; text-align: center">
+                                        <img src="../images/logos/academy/aprende_icon.svg" height="65px">
+                                    </div>
+                                    <h5 class="card-title-academy">Aprende de los mejores</h5>
+                                    <p>
+                                        Recibirás clases de algunos de los mejores especialistas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- Barra con Testimonios Dinamico -------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-left" style="color: #6b478e; padding-top: 40px; font-weight: bold; font-size: 2.1em">Testimonios</h2>
             </div>
         </div>
     </div>
 
-    <!--------------------------- Sección usando Cards Bootstrap 3 + Botones -------------------------------------->
-    <section>
-        <div class="container-fluid" style="background-color:#FFFFFF; padding-top: 60px;">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-2 d-none d-lg-block">
-                        </div>
-                        <div class="col-md-8 m-auto">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h2 class="card-title-dark">Creamos lo que puedas imaginar</h2>
-                                    <p class="card-text-dark" style="padding:30px; padding-bottom: 0;">Productos y
-                                        Servicios de Inteligencia de Negocios y Analítica de Datos que solucionan
-                                        las problemáticas más complejas a las que te puedas enfrentar. </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 m-auto" style="padding-left: 60px;padding-right: 60px;padding-bottom: 30px;">
+                <div class="brands">
+
+                    <div>
+                        <div class="testimonial">
+                            <div class="test-body-block">
+                                <div class="row">
+                                    <div class="col-lg-4 m-auto" style="text-align: center">
+                                        <img class="test-img" src="../images/logos/academy/test2.png" alt="face1">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="test-heading">
+                                            <p>Verónica Mena</p>
+                                        </div>
+                                        <div class="test-comp">Analista de Datos</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="test-text">Terminé mi primer curso, y quiero ya empezar el segundo,
+                                        realmente se aprende mucho con
+                                        los instructores</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 d-none d-lg-block">
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="container-fluid" style="background-color:#FFFFFF;">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-1 d-none d-lg-block">
-                        </div>
-                        <div class="col-md">
-                            <div class="card-deck">
-                                <div class="card">
-                                    <img src="../images/assets/estrategia_icon.svg" height="90px" alt="Estrategia">
-                                    <div class="card-body">
-                                        <h4 class="card-title-dark" style="text-align: center">ESTRATEGIA</h4>
-                                        <p class="card-text-dark" style="text-align: center">Entendemos que la
-                                            imaginación debe siempre acompañarse de visión y sentido.</p>
+                    <div>
+                        <div class="testimonial">
+                            <div class="test-body-block">
+                                <div class="row">
+                                    <div class="col-lg-4 m-auto" style="text-align: center">
+                                        <img class="test-img" src="../images/logos/academy/test1.png" alt="face1">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="test-heading">
+                                            <p>Luis Castro</p>
+                                        </div>
+                                        <div class="test-comp">Analista de Datos</div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img src="../images/assets/integracion_icon.svg" height="90px" alt="Integracion">
-                                    <div class="card-body">
-                                        <h4 class="card-title-dark" style="text-align: center">INTEGRACIÓN</h4>
-                                        <p class="card-text-dark" style="text-align: center;">Creemos que la mayor
-                                            disponibilidad de datos confiables tiene un impacto positivo
-                                            en las organizaciones.</p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="../images/assets/escalabilidad_icon.svg" height="90px" alt="Escalabilidad">
-                                    <div class="card-body">
-                                        <h4 class="card-title-dark" style="text-align: center">ESCALABILIDAD</h4>
-                                        <p class="card-text-dark" style="text-align: center;">Confiamos en el
-                                            crecimiento y en el poder tecnológico y transformacional de nuestras
-                                            soluciones.
-                                        </p>
-                                    </div>
+                                <div class="row">
+                                    <div class="test-text">Terminé mi primer curso, y quiero ya empezar el segundo,
+                                        realmente se aprende mucho con
+                                        los instructores</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1 d-none d-lg-block">
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="container-fluid" style="background-color:#FFFFFF; padding-bottom: 60px;padding-top: 10px;">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row" style="text-align: center;">
-                        <div class="col-md-2 d-none d-lg-block"></div>
-                        <div class="col-md-1 d-none d-md-block"></div>
-                        <div class="col-md ml-auto">
-                            <button href="/es/productos" onclick="location.href = '/es/productos';" class="btn info"
-                                style="font-weight: bold; margin-bottom:13px; padding-left: 40px;padding-right: 40px;">Productos</button>
+                    <div>
+                        <div class="testimonial">
+                            <div class="test-body-block">
+                                <div class="row">
+                                    <div class="col-lg-4 m-auto" style="text-align: center">
+                                        <img class="test-img" src="../images/logos/academy/test1.png" alt="face1">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="test-heading">
+                                            <p>Hubert Farnsworth</p>
+                                        </div>
+                                        <div class="test-comp">Analista de Datos</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="test-text">Terminé mi primer curso, y quiero ya empezar el segundo,
+                                        realmente se aprende mucho con
+                                        los instructores</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md mr-auto">
-                            <button href="/es/servicios" onclick="location.href = '/es/servicios';" class="btn info"
-                                style="font-weight: bold; margin-bottom:13px; padding-left: 40px;padding-right: 40px;">Servicios</button>
-                        </div>
-                        <div class="col-md-1 d-none d-md-block"></div>
-                        <div class="col-md-2 d-none d-lg-block"></div>
                     </div>
+
+                    <div>
+                        <div class="testimonial">
+                            <div class="test-body-block">
+                                <div class="row">
+                                    <div class="col-lg-4 m-auto" style="text-align: center">
+                                        <img class="test-img" src="../images/logos/academy/test2.png" alt="face1">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="test-heading">
+                                            <p>Lisa Vélez</p>
+                                        </div>
+                                        <div class="test-comp">Analista de Datos</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="test-text">Terminé mi primer curso, y quiero ya empezar el segundo,
+                                        realmente se aprende mucho con
+                                        los instructores</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!----------------------------------- Footer ------------------------------------------------>
     <section>
@@ -318,42 +497,37 @@
             <div class="container-fluid">
                 <footer class="page-footer">
                     <div class="row" style="padding-top:25px;">
-                        <div class="col-md-1"></div>
+                        <div class="col-md-2"></div>
                         <div class="col-md-2">
-                            <h5 class="font-weight-bold" style="color: white;">PRODUCTOS</h5>
+                            <h5 class="font-weight-bold" style="color: white;">APRENDE</h5>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="/es/helio" style="color:#C2C2C2">helio.geo</a>
+                                    <a href="/#Cursos" style="color:#C2C2C2">Cursos</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">PLANES</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="" style="color:#C2C2C2">Individual</a>
                                 </li>
                                 <li>
-                                    <a style="color:#C2C2C2">krypton.data</a>
+                                    <a href="" style="color:#C2C2C2">Corporativo</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="col-md-2">
-                            <h5 class="font-weight-bold" style="color: white;">SERVICIOS</h5>
+                            <h5 class="font-weight-bold" style="color: white;">ACERCA DE</h5>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="/es/servicios#estrategiaDot8" style="color:#C2C2C2">Estrategia DOT8</a>
+                                    <a href="/es/contacto-academy" style="color:#C2C2C2">Contacto</a>
                                 </li>
                                 <li>
-                                    <a href="/es/servicios#BINewGen" style="color:#C2C2C2">BI Nueva Generación</a>
-                                </li>
-                                <li>
-                                    <a href="/es/servicios#analiticaAvanzada" style="color:#C2C2C2">Analítica Avanzada</a>
-                                </li>
-                                <li>
-                                    <a href="/es/academy" style="color:#C2C2C2">handytec Academy</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-2">
-                            <h5 class="font-weight-bold" style="color: white;">TECNOLOGÍA</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="/es/aliados" style="color:#C2C2C2">Aliados</a>
+                                    <a href="#" style="color:#C2C2C2">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -362,114 +536,108 @@
                             <h5 class="font-weight-bold" style="color: white;">CONTÁCTANOS</h5>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="/es/contacto" style="color:#C2C2C2">Contacto</a>
+                                    <a href="/es/contacto-academy" style="color:#C2C2C2">Contacto</a>
                                 </li>
                                 <li>
-                                    <a href="/es/contacto" style="color:#C2C2C2">Carreras</a>
+                                    <a href="/es/contacto-academy" style="color:#C2C2C2">Carreras</a>
                                 </li>
                                 <li>
-                                    <a href="#!" style="color:#C2C2C2">Casos de Éxito</a>
+                                    <a href="#" style="color:#C2C2C2">Casos de Éxito</a>
                                 </li>
                             </ul>
                         </div>
-
-                        <div class="col-md-2">
-                            <h5 class="font-weight-bold" style="color: white;">SITIO</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="/es" style="color:#C2C2C2">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="/es/nosotros" style="color:#C2C2C2">Nosotros</a>
-                                </li>
-                                <li>
-                                    <a href="/es/productos" style="color:#C2C2C2">Productos</a>
-                                </li>
-                                <li>
-                                    <a href="/es/servicios" style="color:#C2C2C2">Servicios</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-md-2"></div>
                     </div>
 
                     <!-- Footer de 3 columnas-->
                     <div class="footer-direccion">
                         <div class="row">
-                            <div class="col-md-1"></div>
                             <div class="col-md-3 m-auto">
-                                <div>
-                                    <a href="/es">
-                                        <img src="../images/logos/handytec_logo_index.svg" height="39px">
-                                    </a>
-                                </div>
-                                <br>
-                                <a style="color:#C2C2C2">© 2018 Handytecmobi S.A. Todos los derechos reservados.</a>
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" onclick="openLink('https://www.handytec.mobi')">
+                                            <img src="../images/logos/handytec_logo_index.svg" height="39px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <p style="color: #C2C2C2; font-size: 0.9em; margin-top: 15px;">Empresa de
+                                            Analítica y Big data que ha dado un paso adelante con sus programas de
+                                            capacitación en Ciencia de Datos.</p>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div class="col-md-3 m-auto">
                                 <br>
-                                <a style="color:#C2C2C2">Av. República de El Salvador N35-82 y Portugal</a>
-                                <a style="color:#C2C2C2"> |Quito, Ecuador|</a>
-                                <br>
+                                <a style="color:#C2C2C2">Av. República de El Salvador N35-82 y Portugal |Quito,
+                                    Ecuador|
+                                </a>
                                 <a style="color:#C2C2C2">+593 (02) 224 3559 | contact@handytec.mobi</a>
+                                </br>
+                                <br>
+                                <a style="color:#C2C2C2">©2019 Handytecmobi S.A. Todos los derechos reservados.</a>
+                                </br>
                             </div>
 
                             <div class="col-md-3 m-auto">
                                 <br>
                                 <div class="row-img">
+                                    <h5 class="font-weight-bold" style="color: white;">Síguenos</h5>
                                     <img class="zoom" href="#" onclick="openLink('https://www.linkedin.com/company/handytec')"
                                         src="../images/logos/linkedin_logo.png" width="30" height="30" alt="LinkedIn"
-                                        style="cursor: pointer;" onmouseover="hoverLinked(this,'linkedin');" onmouseout="unhoverLinked(this,'linkedin');">
+                                        style="cursor: pointer;">
                                     <img class="zoom" href="#" onclick="openLink('https://twitter.com/handytec')" src="../images/logos/twitter_logo.png"
-                                        width="30" height="30" alt="Twitter" style="cursor: pointer;" onmouseover="hoverLinked(this,'twitter');"
-                                        onmouseout="unhoverLinked(this,'twitter');">
+                                        width="30" height="30" alt="Twitter" style="cursor: pointer;">
                                     <img class="zoom" href="#" onclick="openLink('https://www.facebook.com/handytec')"
                                         src="../images/logos/facebook_logo.png" width="30" height="30" alt="Facebook"
-                                        style="cursor: pointer;" onmouseover="hoverLinked(this,'facebook');" onmouseout="unhoverLinked(this,'facebook');">
+                                        style="cursor: pointer;">
                                 </div>
                             </div>
-                            <div class="col-md-1"></div>
+
                         </div>
                     </div>
+
                 </footer>
             </div>
         </div>
     </section>
 
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="../javascripts/bootstrap.min.js"></script>
     <script src="../javascripts/navcolor.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.brands').slick({
-                slidesToShow: 6,
+                slidesToShow: 3,
                 slidesToScroll: 1,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 3000,
                 pauseOnFocus: false,
                 pauseOnHover: false,
                 responsive: [
                     {
-                        breakpoint: 768,
+                        breakpoint: 1025,
                         settings: {
-                            slidesToShow: 3,
-                            autoplay: true,
+                            slidesToShow: 2,
+                            autoplay: false,
                             autoplaySpeed: 3000,
                             pauseOnFocus: false,
                             pauseOnHover: false
                         }
                     },
                     {
-                        breakpoint: 480,
+                        breakpoint: 520,
                         settings: {
-                            slidesToShow: 2,
-                            autoplay: true,
+                            slidesToShow: 1,
+                            autoplay: false,
                             autoplaySpeed: 3000,
                             pauseOnFocus: false,
                             pauseOnHover: false
@@ -479,6 +647,7 @@
             });
         });
     </script>
+
     <script>
         function openLink(link) {
             window.open(link);
@@ -486,34 +655,9 @@
         function changeLink(link) {
             window.location.replace(link);
         }
-        var searchField = document.getElementById('input-search');
-        var searchBtn = document.getElementById('search-btn');
-        searchBtn.addEventListener('mouseover', function () {
-            searchField.focus();
-        });
     </script>
-    <script>
-        if (!Modernizr.touchevents) {
-            function hoverLinked(element, brand) {
-                var src = `../images/logos/${brand}_active_logo.png`
-                element.setAttribute('src', src);
-            };
-            function unhoverLinked(element, brand) {
-                var src = `../images/logos/${brand}_logo.png`
-                element.setAttribute('src', src);
-            };
-        } else {
-            function hoverLinked(element, brand) {
-                var src = `../images/logos/${brand}_logo.png`
-                element.setAttribute('src', src);
-            };
-            function unhoverLinked(element, brand) {
-                var src = `../images/logos/${brand}_logo.png`
-                element.setAttribute('src', src);
-            };
-        }
 
-    </script>
+
 </body>
 
 </html>

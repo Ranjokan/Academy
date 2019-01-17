@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92186899-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92186899-2');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/academy-style.css" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascripts/modernizr-custom.js"></script>
+    <link id="favicon" rel="icon" href="../images/logos/handytec_icon_bk.ico" type="image/x-icon">
+
+</head>
+
+<body style="background-color: #f8f8f8 !important; margin-top: 60px;">
+   <!--------------------------- NavBar-------------------------------------->
+    <section>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="padding-bottom: 10px;">
+
+            <a href="/" class="navbar-left">
+                <img src="../images/logos/academy/e-academy_logo.svg" height="65px">
+            </a>
+            <!-- boton tipo hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active" style="padding-right: 60px;">
+                        <a class="navbar-brand" href="/#Cursos">
+                            <img src="../images/logos/academy/cursos_icon.svg" width="65" height="65" alt="Cursos"
+                                style="text-decoration-color: black" />
+                            <span>Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="navbar-brand" href="/es/contacto-academy">
+                            <img src="../images/logos/academy/plan_corporativo_icon.svg" width="65" height="65" alt="Plan"
+                                style="text-decoration-color: black" />
+                            <span>Plan Corporativo</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <button href="/es/contacto-academy" onclick="location.href = '/es/contacto-academy';" class="btn login-academy"
+                            style="font-weight: bold">Iniciar Sesión</button>
+                        <!-- añadir link para el inicio de sesion-->
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+    <!--------------------------- Secccion Formulario Contacto -------------------------------------->
+    <section style="background-color: #882785 !important">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2 d-none d-xl-block">
+                        </div>
+                        <div id="textoFormulario" class="col-md" style="padding-top: 60px;">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <p class="card-text-dark" style="padding:10px; padding-bottom: 0; text-align: left; color: white;">¿PODEMOS
+                                        AYUDARTE?</p>
+                                    <h4 class="card-title-dark" style="text-align: left; padding-left: 10px;color: white;font-size: 2.5em;">ESCRÍBENOS
+                                        Y NOS VEREMOS MUY PRONTO</h4>
+                                    <p class="card-text-dark" style="padding:10px; padding-bottom: 0; text-align: left;color: white;font-size: 1.30em;">Tus
+                                        datos y contexto nos ayudarán a clarificar cuál es tu necesidad. Así,
+                                        identificaremos
+                                        cuál es la mejor forma de convertirnos en tus aliados estratégicos y
+                                        transformar
+                                        la manera en que tomas tus decisiones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="formulario" class="col-md col-s-12" style="padding-top: 50px; padding-bottom: 30px;">
+                            <div id="colFormulario" style="padding-left: 10px;padding-right: 10px;">
+                                <form id="contactForm" class="needs-validation" novalidate>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" id="name" placeholder="Nombre *"
+                                                name="client_name" required pattern="([A-zÀ-ž]){3,}">
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" id="lastname" placeholder="Apellido *"
+                                                name="client_lastname" required pattern="([A-zÀ-ž]){3,}">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" id="email" placeholder="Correo Electrónico *"
+                                                name="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" id="phone" placeholder="Celular *"
+                                                name="phone" required pattern="([0-9]){10,10}">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <label for="found_by" style="color:white;font-weight: bold;font-size: 0.7em;">¿Cómo
+                                                nos conociste? *
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <select class="custom-select" id="found_by" name="found_by" placeholder="¿Cómo nos conociste?"
+                                                    required>
+                                                    <option value="" selected disabled>Seleccione una opción</option>
+                                                    <option value="DSH">Búsqueda Directa</option>
+                                                    <option value="GGL">Google</option>
+                                                    <option value="FCB">Facebook</option>
+                                                    <option value="TWT">Twitter</option>
+                                                    <option value="LIN">LinkedIn</option>
+                                                    <!-- <option value="BLG">Blog handytec</option> -->
+                                                    <option value="PRR">Referidos</option>
+                                                    <option value="OTH">Otros</option>
+                                                </select>
+                                                <div class="invalid-feedback" style="color: aliceblue;">Por favor
+                                                    seleccione una opción</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-12">
+                                            <input type="hidden" id="device" name="device" value="false" />
+                                            <input type="hidden" name="section" value="CONTACT" />
+                                            <input type="hidden" id="lang" name="lang" value="es" />
+                                            <div class="form-group">
+                                                <label for="message" style="color: white;font-weight: bold;font-size: 0.7em;">¿Cómo
+                                                    podemos ayudarte? *
+                                                </label>
+                                                <textarea class="form-control" rows="3" id="message" name="client_message"
+                                                    placeholder="Escríbenos.." required></textarea>
+                                                <div class="invalid-feedback" style="color: aliceblue;">Por favor
+                                                    escriba los detalles de su requerimiento</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="background-color: rgba(0,0,0,0.1);padding: 12px;border-radius: 8px;">
+                                        <div class="form-row">
+                                            <div class="col-md-12" style="text-align: center;">
+                                                <center>
+                                                    <div class="g-recaptcha" data-callback="recaptchaCallback"
+                                                        data-expired-callback="recaptchaExpired" data-sitekey="6Lc6KHAUAAAAAALoiNl8epoUGrYSGQ60QQczAdoM"></div>
+                                                </center>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-12" style="text-align: center;">
+                                                <button id="btnModalServicio" type="submit" class="btn info-academy" style="font-weight: bold;width: 60%; margin-left: 0; margin-right: 0;border: none;"
+                                                    disabled>Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-none d-xl-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------- Footer ------------------------------------------------>
+    <section>
+        <div class="footer-img" style="padding-top: 20px;">
+            <div class="container-fluid">
+                <footer class="page-footer">
+                    <div class="row" style="padding-top:25px;">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">APRENDE</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/#Cursos" style="color:#C2C2C2">Cursos</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">PLANES</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="" style="color:#C2C2C2">Individual</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:#C2C2C2">Corporativo</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">ACERCA DE</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es/contacto-academy" style="color:#C2C2C2">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:#C2C2C2">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h5 class="font-weight-bold" style="color: white;">CONTÁCTANOS</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/es/contacto-academy" style="color:#C2C2C2">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="/es/contacto-academy" style="color:#C2C2C2">Carreras</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:#C2C2C2">Casos de Éxito</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+
+                    <!-- Footer de 3 columnas-->
+                    <div class="footer-direccion">
+                        <div class="row">
+                            <div class="col-md-3 m-auto">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" onclick="openLink('https://www.handytec.mobi')">
+                                            <img src="../images/logos/handytec_logo_index.svg" height="39px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <p style="color: #C2C2C2; font-size: 0.9em; margin-top: 15px;">Empresa de
+                                            Analítica y Big data que ha dado un paso adelante con sus programas de
+                                            capacitación en Ciencia de Datos.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-3 m-auto">
+                                <br>
+                                <a style="color:#C2C2C2">Av. República de El Salvador N35-82 y Portugal |Quito,
+                                    Ecuador|
+                                </a>
+                                <a style="color:#C2C2C2">+593 (02) 224 3559 | contact@handytec.mobi</a>
+                                </br>
+                                <br>
+                                <a style="color:#C2C2C2">©2019 Handytecmobi S.A. Todos los derechos reservados.</a>
+                                </br>
+                            </div>
+
+                            <div class="col-md-3 m-auto">
+                                <br>
+                                <div class="row-img">
+                                    <h5 class="font-weight-bold" style="color: white;">Síguenos</h5>
+                                    <img class="zoom" href="#" onclick="openLink('https://www.linkedin.com/company/handytec')"
+                                        src="../images/logos/linkedin_logo.png" width="30" height="30" alt="LinkedIn"
+                                        style="cursor: pointer;">
+                                    <img class="zoom" href="#" onclick="openLink('https://twitter.com/handytec')" src="../images/logos/twitter_logo.png"
+                                        width="30" height="30" alt="Twitter" style="cursor: pointer;">
+                                    <img class="zoom" href="#" onclick="openLink('https://www.facebook.com/handytec')"
+                                        src="../images/logos/facebook_logo.png" width="30" height="30" alt="Facebook"
+                                        style="cursor: pointer;">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- Confirmation modal ------------------------>
+    <div class="modal fade bs-example-modal-sm" id="myConfirmationModal" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" onclick="javascript:window.location.reload()" class="close no-float"
+                        data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12" id="modal-confirmation-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../javascripts/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/navcolor.js"></script>
+
+    <script>
+        function openLink(link) {
+            window.open(link);
+        }
+        function changeLink(link) {
+            window.location.replace(link);
+        }
+    </script>
+
+    <script>
+        function recaptchaCallback() {
+            $('#btnModalServicio').removeAttr('disabled');
+        };
+        function recaptchaExpired() {
+            $('#btnModalServicio').attr('disabled', true);
+        }
+        //Serializar los datos para el envío al Backend
+        $.fn.serializeAndEncode = function () {
+            return $.map(this.serializeArray(), function (val) {
+                return [val.name, encodeURIComponent(val.value)].join('=');
+            }).join('&');
+        };
+    </script>
+
+    <script>
+        // Verificar la validación de los formularios del Documento
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                // Prevent Submit if not valid
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <script>
+        $("#contactForm").submit(function (e) {
+            var submitBtn = document.getElementById('btnModalServicio');
+            var form = $("#contactForm");
+            if (form[0].checkValidity()) {
+                e.preventDefault();
+                var data = $('#contactForm').serializeAndEncode();
+                var data_parts = data.split("&");
+                var request_form = {};
+                var count_null = 0;
+                for (var i = 0; i < data_parts.length; i++) {
+                    var data_obj = data_parts[i];
+                    var name_obj = data_obj.split("=")[0];
+                    var value_obj = data_obj.split("=")[1];
+                    request_form["" + decodeURIComponent(name_obj) + ""] = decodeURIComponent(value_obj);
+                    if (!value_obj) {
+                        count_null++;
+                    }
+                }
+
+                if (count_null == 0) {
+                    $.post('/enviar/request', request_form, function (data) {
+                        if (data.captcha == true) {
+                            $.get("/templates/confirmation.html", function (data) {
+                                $("#myConfirmationModal .modal-title").empty();
+                                $("#modal-confirmation-content").empty();
+                                $("#modal-confirmation-content").html(data);
+                                $('#myConfirmationModal').modal('show');
+                            });
+                        }
+                        grecaptcha.reset();
+                        submitBtn.disabled = true;
+                    })
+                        .fail(function (response) {
+                            //console.log('Error: ' + response.responseText);
+                        });
+                }
+                else {
+                    //console.log("campos requeridos");
+                }
+                return false;
+            }
+        });
+    </script>
+</body>
+
+</html>

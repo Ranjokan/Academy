@@ -17,73 +17,55 @@
     <title>handytec</title>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="/stylesheets/handytec-style.css" rel="stylesheet">
+    <link href="/stylesheets/academy-style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/javascripts/modernizr-custom.js"></script>
     <link id="favicon" rel="icon" href="/images/logos/handytec_icon_bk.ico" type="image/x-icon">
 </head>
 
-<body>
+<body style="background-image: url(../images/logos/academy/back_404.png); background-size: cover;padding-top: 0px;">
     <!--------------------------- NavBar + Background Image + Texto Centrado -------------------------------------->
     <section style="min-height: 100vh;">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="padding-bottom: 10px;">
+
+            <a href="/" class="navbar-left">
+                <img src="../images/logos/academy/e-academy_logo.svg" height="65px">
+            </a>
+            <!-- boton tipo hamburguesa -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active" style="padding-right: 60px;">
+                        <a class="navbar-brand" href="/#Cursos">
+                            <img src="../images/logos/academy/cursos_icon.svg" width="65" height="65" alt="Cursos"
+                                style="text-decoration-color: black" />
+                            <span>Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="navbar-brand" href="/es/contacto-academy">
+                            <img src="../images/logos/academy/plan_corporativo_icon.svg" width="65" height="65" alt="Plan"
+                                style="text-decoration-color: black" />
+                            <span>Plan Corporativo</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <button href="/es/contacto-academy" onclick="location.href = '/es/contacto-academy';" class="btn login-academy"
+                            style="font-weight: bold">Iniciar Sesión</button>
+                        <!-- añadir link para el inicio de sesion-->
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
         <div class="not-found-header-img" style="min-height: 100vh;">
-            <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="padding-bottom: 15px;">
-                <a href="/es" class="navbar-left">
-                    <img src="/images/logos/handytec_logo_index.svg" height="39px">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/es" onclick="location.href = '/es';">Inicio
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/es/nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/es/productos" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-                            <div class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/productos#helio">helio.geo</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/productos#krypton">krypton.data</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/es/servicios" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-                            <div class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#estrategiaDot8">Estrategia DOT8</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#BINewGen">BI Nueva Generación</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/servicios#analiticaAvanzada">Analítica Avanzada</a>
-                                <a class="dropdown-item" style="padding: 8px; " href="/es/academy">handytec Academy</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/es/contacto">Contacto</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a id="es-languaje-dropdown" class="nav-link dropdown-toggle" href="/es" id="navbarDropdown" role="button" aria-haspopup="true"
-                                aria-expanded="false">
-                                <img src="/images/flags/ES.png" alt="ES" /> ES</a>
-                            <div id="en-languaje-dropdown" class="dropdown-menu" style="min-width: 75px;" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="padding: 8px; " href="#" onclick="changeLink('/en')">
-                                    <img src="/images/flags/US.png" alt="EN" /> EN</a>
-                            </div>
-                        </li>
-                        <li class="search-form">
-                            <form role="search" method="get" class="search" action="/es/buscar">
-                                <input id="input-search" type="text" name="q" value="" class="search-input search_field_main" maxlength="50" placeholder="Buscar..">
-                                <input id="search-btn" type="submit" class="search-trigger search_submit_main" style="width: 30px; height: 30px;">
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
             <div class="notfound-center-main-text">
                 <div class="container-fluid">
                     <div class="row">
@@ -92,12 +74,14 @@
                                 <div class="col-md-2">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card text-center">
+                                    <div class="card text-center" style="color: #6b478e">
                                         <div class="card-body">
                                             <h2 class="card-title" style="font-size: 3em;">
                                                 <span class="bold">404</span>
                                             </h2>
-                                            <p class="card-text" style="padding:30px; text-align: center;">No encontramos lo que buscas, pero ¡no te desanimes! Sigue navegando o contáctanos
+                                            <p class="card-text" style="padding:30px; text-align: center;">No
+                                                encontramos lo que buscas, pero ¡no te desanimes! Sigue navegando o
+                                                contáctanos
                                                 directamente.
                                             </p>
                                         </div>
@@ -127,11 +111,6 @@
         function changeLink(link) {
             window.location.replace(link);
         }
-        var searchField = document.getElementById('input-search');
-        var searchBtn = document.getElementById('search-btn');
-        searchBtn.addEventListener('mouseover', function () {
-            searchField.focus();
-        });
     </script>
 </body>
 
